@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+#editors {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+}
+
+.editor-container h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.editor-container .editor {
+    flex: 1;
+    height: 100%;
+}
+
+#preview-console {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #f7f7f7;
+}
+
+#output-container {
+    flex: 3;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

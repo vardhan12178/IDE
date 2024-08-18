@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online IDE</title>
+    <link rel="stylesheet" href="https://unpkg.com/monaco-editor@0.31.1/min/vs/editor/editor.main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="editors">
+            <div class="editor-container">
+                <h3>HTML</h3>
+                <div id="htmlEditor" class="editor"></div>
+            </div>
+            <div class="editor-container">
+                <h3>CSS</h3>
+                <div id="cssEditor" class="editor"></div>
+            </div>
+            <div class="editor-container">
+                <h3>JavaScript</h3>
+                <div id="jsEditor" class="editor"></div>
+            </div>
+        </div>
+        <div id="preview-console">
+            <div id="output-container">
+                <iframe id="outputFrame"></iframe>
+            </div>
+           
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/monaco-editor@0.31.1/min/vs/loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
